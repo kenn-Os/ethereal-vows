@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* login.scss */
+/* Homepage styles */
+/* Navigation styles */
+.logo-font-size {
+  font-size: 10.9rem;
+}
+
+nav {
+  color: #FB8500;
+}
+
+.ul {
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+.ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.ul li a:hover {
+  color: #FFB703;
+}
+.ul ul > li > a::after {
+  content: "";
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.nav {
+  transition: all 0.3s ease;
+}
+
+.nav ul {
+  transition: margin-top 0.3s ease;
+}
+
+.nav .nav-link {
+  transition: color 0.3s ease;
+}
+
+.nav img {
+  transition: opacity 0.3s ease;
+}
+
+.card-hover-effect {
+  transition: transform 0.3s;
+}
+
+.card-hover-effect:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog */
+.chat-bubble {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.chat-bubble-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-bubble-comment {
+  margin: 5px 0;
+  padding: 5px 10px;
+  background-color: #efefef;
+  border-radius: 10px;
+}
+
+.chat-bubble-comment-form {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sign-up {
+  font-family: Dancing Script Regular;
+}
+
+.login {
+  font-family: Dancing Script Regular;
+}
+
+.photo {
+  font-family: Harlow Solid;
+  font-size: 4rem;
+  color: #FB8500;
+}
+
+.dashboard-card {
+  background-color: #f7f9fc;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vendor-list,
+.document-list,
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.vendor-list li,
+.document-list li,
+.checklist li {
+  margin-bottom: 10px;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: #6abf69;
+}
+
+.incomplete-task {
+  color: #ff9f43;
+}
+
+.team-member {
+  background-color: #f7f9fc;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+/* Simple animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.team-member {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+hero {
+  background-color: linear-gradient(to right, #ff9933, #ff3399);
+}
+
+/* Dashboard.css */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #023047;
+  color: #FFB703;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+.menu-list {
+  padding: 0;
+  list-style: none;
+}
+
+.menu-list li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.toggle-button {
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.main-content {
+  flex-grow: 1;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Style for checklist */
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li {
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.completed-task {
+  text-decoration: line-through;
+}
+
+.bout {
+  font-family: Harlow Solid;
+  font-size: 2rem;
+  color: #FB8500;
+}
+
+.pbout {
+  color: #f5f5f5;
+  font-family: Consolas;
+}
+
+.team {
+  background-color: #034160;
+}
+
+.h4s {
+  color: #FB8500;
+  font-family: Dancing Script Regular;
+  font-size: 25px;
+}
+
+.p1 {
+  color: #FFB703;
+  font-family: Space Mono;
+}
+
+.p2 {
+  color: #f5f5f5;
+}
+
+.Ethereal {
+  color: #FB8500;
+}
+
+.contact {
+  font-family: Dancing Script Regular;
+  font-size: 35px;
+}
+
+.terms {
+  font-family: Dancing Script Regular;
+  font-size: 35px;
+}
+
+.text {
+  color: #FFB703;
+  font-family: Monokoi;
+}
+
+/* Add this to your CSS */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.tex {
+  color: #034160;
+  text-decoration: none;
+}
+
+.tex:hover {
+  color: #007bff;
+}
+
+body::-webkit-scrollbar {
+  background-color: #023047;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FB8500;
+  border-radius: 10px;
+}
+
+.sidebar {
+  text-decoration: none;
+}
+
+.privacy, .disclaimer {
+  font-family: Harlow Solid;
+  font-size: 40px;
+  color: #FB8500;
+  text-decoration: none;
+}
